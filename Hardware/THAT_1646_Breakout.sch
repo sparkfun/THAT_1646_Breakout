@@ -20909,7 +20909,7 @@ For prototyping/breadboarding, the entire board is grounded through the
 output connector (J4).  In that case, leave JP1 intact.
 
 If installing in a metal enclosure, the enclosure should be tied to earth, 
-and the shield should be toed to the enclosure as directly as possible.  
+and the shield should be tied to the enclosure as directly as possible.  
 In this case, cut JP1, and run a heavy wire from J3 to the chassis.
 
 This avoids the common "pin 1 problem," 
