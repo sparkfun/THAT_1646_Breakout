@@ -20847,7 +20847,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="J2" library="SparkFun-Connectors" deviceset="AUDIO-JACK4-.25-HORIZ-TRS" device="" value="OUTPUT"/>
+<part name="J6" library="SparkFun-Connectors" deviceset="AUDIO-JACK4-.25-HORIZ-TRS" device="" value="OUTPUT"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND-ISO2" library="SparkFun-Aesthetics" deviceset="GND-ISO" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
@@ -20859,8 +20859,8 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="27uH">
 <attribute name="PROD_ID" value="NDUC-12579"/>
 </part>
-<part name="D2" library="SparkFun-DiscreteSemi" deviceset="BAV99" device=""/>
-<part name="D1" library="SparkFun-DiscreteSemi" deviceset="BAV99" device=""/>
+<part name="D2" library="SparkFun-DiscreteSemi" deviceset="BAV99" device="" value="BAV99"/>
+<part name="D1" library="SparkFun-DiscreteSemi" deviceset="BAV99" device="" value="BAV99"/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
@@ -20874,23 +20874,23 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="M04" device="NO_SILK_ALL_ROUND"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="M04" device="NO_SILK_ALL_ROUND" value="1x4"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="1X02_NO_SILK" value="CHASSIS"/>
-<part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
-<part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
-<part name="LOGO4" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH"/>
+<part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="LOGO5" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH"/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".2_INCH"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
-<part name="J4" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP" value="SN"/>
-<part name="J5" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP" value="TN"/>
-<part name="J6" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP" value="RN"/>
-<part name="LOGO6" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".2_INCH"/>
-<part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
-<part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="J2" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP" value="SN"/>
+<part name="J4" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP" value="TN"/>
+<part name="J5" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP" value="RN"/>
+<part name="LOGO4" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".2_INCH"/>
+<part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
+<part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="C3" library="that-ics" deviceset="PANA-EEE-1EA100NP" device="" value="10uf NP"/>
 <part name="C4" library="that-ics" deviceset="PANA-EEE-1EA100NP" device="" value="10uf NP"/>
 </parts>
@@ -20917,11 +20917,17 @@ http://www.rane.com/note151.html
 http://www.rane.com/note165.html</text>
 <text x="7.62" y="177.8" size="2.54" layer="97" align="top-left">This board requires bipolar power,
  in the range from +/-5VDC to +/-20VDC.</text>
+<text x="182.88" y="99.06" size="2.1844" layer="97" font="vector" align="top-left">J2, J4, J5 are normals of 
+TRS connections.  If jack 
+is not present, they 
+connect to their respective 
+T/R/S connections.  
+If jack is present, they float.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
-<instance part="J2" gate="G$1" x="236.22" y="144.78" rot="R180"/>
+<instance part="J6" gate="G$1" x="236.22" y="144.78" rot="R180"/>
 <instance part="SUPPLY3" gate="G$1" x="78.74" y="149.86"/>
 <instance part="GND-ISO2" gate="G$1" x="198.12" y="116.84"/>
 <instance part="SUPPLY4" gate="G$2" x="78.74" y="88.9"/>
@@ -20953,18 +20959,18 @@ http://www.rane.com/note165.html</text>
 <instance part="SUPPLY2" gate="G$2" x="48.26" y="106.68"/>
 <instance part="SUPPLY1" gate="G$1" x="43.18" y="129.54"/>
 <instance part="J3" gate="G$1" x="210.82" y="129.54" rot="R180"/>
-<instance part="FD1" gate="G$1" x="246.38" y="20.32"/>
-<instance part="FD2" gate="G$1" x="246.38" y="17.78"/>
-<instance part="LOGO4" gate="G$1" x="187.96" y="35.56"/>
+<instance part="FD3" gate="G$1" x="246.38" y="20.32"/>
+<instance part="FD4" gate="G$1" x="246.38" y="17.78"/>
+<instance part="LOGO5" gate="G$1" x="187.96" y="35.56"/>
 <instance part="LOGO3" gate="G$1" x="180.34" y="38.1"/>
 <instance part="LOGO1" gate="G$1" x="157.48" y="45.72"/>
 <instance part="LOGO2" gate="G$1" x="157.48" y="45.72"/>
-<instance part="J4" gate="G$1" x="203.2" y="167.64" rot="R270"/>
-<instance part="J5" gate="G$1" x="215.9" y="167.64" rot="R270"/>
-<instance part="J6" gate="G$1" x="228.6" y="167.64" rot="R270"/>
-<instance part="LOGO6" gate="G$1" x="180.34" y="38.1"/>
-<instance part="FD3" gate="G$1" x="243.84" y="20.32"/>
-<instance part="FD4" gate="G$1" x="243.84" y="17.78"/>
+<instance part="J2" gate="G$1" x="203.2" y="167.64" rot="R270"/>
+<instance part="J4" gate="G$1" x="215.9" y="167.64" rot="R270"/>
+<instance part="J5" gate="G$1" x="228.6" y="167.64" rot="R270"/>
+<instance part="LOGO4" gate="G$1" x="180.34" y="38.1"/>
+<instance part="FD1" gate="G$1" x="243.84" y="20.32"/>
+<instance part="FD2" gate="G$1" x="243.84" y="17.78"/>
 <instance part="C3" gate="G$1" x="93.98" y="139.7" rot="R90"/>
 <instance part="C4" gate="G$1" x="93.98" y="106.68" rot="R90"/>
 </instances>
@@ -21065,7 +21071,7 @@ http://www.rane.com/note165.html</text>
 <segment>
 <pinref part="GND-ISO2" gate="G$1" pin="GND-ISO"/>
 <wire x1="198.12" y1="119.38" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="EARTH"/>
+<pinref part="J6" gate="G$1" pin="EARTH"/>
 <wire x1="198.12" y1="124.46" x2="198.12" y2="127" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="127" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="129.54" x2="198.12" y2="137.16" width="0.1524" layer="91"/>
@@ -21095,7 +21101,7 @@ http://www.rane.com/note165.html</text>
 <net name="N$8" class="0">
 <segment>
 <pinref part="L2" gate="G$1" pin="2"/>
-<pinref part="J2" gate="G$1" pin="TIP"/>
+<pinref part="J6" gate="G$1" pin="TIP"/>
 <wire x1="154.94" y1="139.7" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="139.7" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
@@ -21107,7 +21113,7 @@ http://www.rane.com/note165.html</text>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="RING"/>
+<pinref part="J6" gate="G$1" pin="RING"/>
 <wire x1="231.14" y1="147.32" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="1"/>
@@ -21175,24 +21181,24 @@ http://www.rane.com/note165.html</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="RING-NORM"/>
-<pinref part="J6" gate="G$1" pin="1"/>
+<pinref part="J6" gate="G$1" pin="RING-NORM"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="231.14" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="149.86" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="TIP-NORM"/>
-<pinref part="J5" gate="G$1" pin="1"/>
+<pinref part="J6" gate="G$1" pin="TIP-NORM"/>
+<pinref part="J4" gate="G$1" pin="1"/>
 <wire x1="231.14" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="144.78" x2="215.9" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="EARTH-NORM"/>
-<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="J6" gate="G$1" pin="EARTH-NORM"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="231.14" y1="139.7" x2="203.2" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="139.7" x2="203.2" y2="160.02" width="0.1524" layer="91"/>
 </segment>
