@@ -164,7 +164,7 @@
 <text x="2.54" y="13.97" size="1.27" layer="21" font="vector" ratio="15" rot="R180" align="center-right">IN</text>
 <text x="46.99" y="-20.32" size="1.778" layer="51" font="vector" ratio="15">Byron Jacquot</text>
 <text x="3.81" y="18.542" size="1.27" layer="16" font="vector" ratio="20" rot="MR0">V01</text>
-<text x="23.622" y="18.542" size="1.27" layer="21" font="vector" ratio="15">THAT 1646 Breakout</text>
+<text x="23.495" y="18.542" size="1.27" layer="21" font="vector" ratio="15">THAT 1646 Breakout</text>
 <text x="23.876" y="10.668" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center">THAT 1646 
 OutSmarts
 Line Driver
