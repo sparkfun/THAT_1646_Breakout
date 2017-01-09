@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -152,7 +152,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
 <libraries>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
@@ -20882,7 +20882,6 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="LOGO5" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH"/>
-<part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".2_INCH"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP" value="SN"/>
@@ -20893,13 +20892,15 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="C3" library="that-ics" deviceset="PANA-EEE-1EA100NP" device="" value="10uf NP"/>
 <part name="C4" library="that-ics" deviceset="PANA-EEE-1EA100NP" device="" value="10uf NP"/>
+<part name="J7" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP" value="T"/>
+<part name="J8" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP" value="R"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="167.64" y="7.62" size="3.81" layer="94" font="vector">Byron Jacquot</text>
 <text x="238.76" y="7.62" size="2.54" layer="94" font="vector">V01</text>
-<wire x1="170.18" y1="182.88" x2="170.18" y2="35.56" width="0.2032" layer="97" style="longdash"/>
+<wire x1="162.56" y1="182.88" x2="162.56" y2="35.56" width="0.2032" layer="97" style="longdash"/>
 <text x="172.72" y="180.34" size="2.54" layer="97" font="vector" rot="R180" align="top-right">Chassis ground region</text>
 <text x="167.64" y="180.34" size="2.54" layer="97" font="vector" rot="R180" align="top-left">Circuit ground region</text>
 <text x="20.32" y="53.34" size="2.54" layer="97" align="top-left">How to use JP1,
@@ -20929,7 +20930,7 @@ If jack is present, they float.</text>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 <instance part="J6" gate="G$1" x="236.22" y="144.78" rot="R180"/>
 <instance part="SUPPLY3" gate="G$1" x="78.74" y="149.86"/>
-<instance part="GND-ISO2" gate="G$1" x="198.12" y="116.84"/>
+<instance part="GND-ISO2" gate="G$1" x="190.5" y="116.84"/>
 <instance part="SUPPLY4" gate="G$2" x="78.74" y="88.9"/>
 <instance part="IC1" gate="G$1" x="71.12" y="111.76"/>
 <instance part="GND4" gate="1" x="63.5" y="114.3"/>
@@ -20945,11 +20946,11 @@ If jack is present, they float.</text>
 <instance part="SUPPLY8" gate="G$1" x="147.32" y="165.1"/>
 <instance part="SUPPLY5" gate="G$2" x="93.98" y="154.94"/>
 <instance part="SUPPLY7" gate="G$2" x="121.92" y="154.94"/>
-<instance part="C6" gate="G$1" x="187.96" y="129.54"/>
-<instance part="C5" gate="G$1" x="177.8" y="129.54"/>
-<instance part="JP1" gate="G$1" x="170.18" y="119.38" rot="R180"/>
-<instance part="GND-ISO1" gate="G$1" x="177.8" y="111.76"/>
-<instance part="GND5" gate="1" x="162.56" y="111.76"/>
+<instance part="C6" gate="G$1" x="180.34" y="129.54"/>
+<instance part="C5" gate="G$1" x="170.18" y="129.54"/>
+<instance part="JP1" gate="G$1" x="162.56" y="119.38" rot="R180"/>
+<instance part="GND-ISO1" gate="G$1" x="170.18" y="111.76"/>
+<instance part="GND5" gate="1" x="154.94" y="111.76"/>
 <instance part="C1" gate="G$1" x="68.58" y="144.78" rot="R90"/>
 <instance part="C2" gate="G$1" x="68.58" y="96.52" rot="R90"/>
 <instance part="GND3" gate="1" x="60.96" y="91.44"/>
@@ -20958,14 +20959,13 @@ If jack is present, they float.</text>
 <instance part="GND1" gate="1" x="43.18" y="111.76"/>
 <instance part="SUPPLY2" gate="G$2" x="48.26" y="106.68"/>
 <instance part="SUPPLY1" gate="G$1" x="43.18" y="129.54"/>
-<instance part="J3" gate="G$1" x="210.82" y="129.54" rot="R180"/>
+<instance part="J3" gate="G$1" x="203.2" y="129.54" rot="R180"/>
 <instance part="FD3" gate="G$1" x="246.38" y="20.32"/>
 <instance part="FD4" gate="G$1" x="246.38" y="17.78"/>
 <instance part="LOGO5" gate="G$1" x="187.96" y="35.56"/>
-<instance part="LOGO3" gate="G$1" x="180.34" y="38.1"/>
 <instance part="LOGO1" gate="G$1" x="157.48" y="45.72"/>
 <instance part="LOGO2" gate="G$1" x="157.48" y="45.72"/>
-<instance part="J2" gate="G$1" x="203.2" y="167.64" rot="R270"/>
+<instance part="J2" gate="G$1" x="200.66" y="167.64" rot="R270"/>
 <instance part="J4" gate="G$1" x="215.9" y="167.64" rot="R270"/>
 <instance part="J5" gate="G$1" x="228.6" y="167.64" rot="R270"/>
 <instance part="LOGO4" gate="G$1" x="180.34" y="38.1"/>
@@ -20973,6 +20973,8 @@ If jack is present, they float.</text>
 <instance part="FD2" gate="G$1" x="243.84" y="17.78"/>
 <instance part="C3" gate="G$1" x="93.98" y="139.7" rot="R90"/>
 <instance part="C4" gate="G$1" x="93.98" y="106.68" rot="R90"/>
+<instance part="J7" gate="G$1" x="215.9" y="127" rot="R90"/>
+<instance part="J8" gate="G$1" x="228.6" y="127" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -21015,9 +21017,9 @@ If jack is present, they float.</text>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="162.56" y1="114.3" x2="162.56" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="114.3" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="119.38" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="119.38" x2="157.48" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -21070,56 +21072,64 @@ If jack is present, they float.</text>
 <net name="GND-ISO" class="0">
 <segment>
 <pinref part="GND-ISO2" gate="G$1" pin="GND-ISO"/>
-<wire x1="198.12" y1="119.38" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="119.38" x2="190.5" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="EARTH"/>
-<wire x1="198.12" y1="124.46" x2="198.12" y2="127" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="127" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="129.54" x2="198.12" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="137.16" x2="231.14" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="124.46" x2="190.5" y2="127" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="127" x2="190.5" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="129.54" x2="190.5" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="137.16" x2="231.14" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="127" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="127" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="124.46" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="124.46" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="127" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
-<junction x="187.96" y="124.46"/>
+<wire x1="180.34" y1="124.46" x2="190.5" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="127" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
+<junction x="180.34" y="124.46"/>
 <pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="129.54" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="129.54" x2="190.5" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="127" x2="203.2" y2="127" width="0.1524" layer="91"/>
-<junction x="198.12" y="127"/>
-<junction x="198.12" y="129.54"/>
-<junction x="198.12" y="124.46"/>
+<wire x1="190.5" y1="127" x2="195.58" y2="127" width="0.1524" layer="91"/>
+<junction x="190.5" y="127"/>
+<junction x="190.5" y="129.54"/>
+<junction x="190.5" y="124.46"/>
 </segment>
 <segment>
 <pinref part="GND-ISO1" gate="G$1" pin="GND-ISO"/>
-<wire x1="177.8" y1="114.3" x2="177.8" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="114.3" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="119.38" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="119.38" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="L2" gate="G$1" pin="2"/>
 <pinref part="J6" gate="G$1" pin="TIP"/>
-<wire x1="154.94" y1="139.7" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="139.7" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="139.7" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="142.24" x2="231.14" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="139.7" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
-<junction x="177.8" y="139.7"/>
+<wire x1="170.18" y1="139.7" x2="182.88" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="139.7" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="142.24" x2="215.9" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="142.24" x2="231.14" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="139.7" x2="170.18" y2="134.62" width="0.1524" layer="91"/>
+<junction x="170.18" y="139.7"/>
+<pinref part="J7" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="134.62" x2="215.9" y2="142.24" width="0.1524" layer="91"/>
+<junction x="215.9" y="142.24"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="RING"/>
-<wire x1="231.14" y1="147.32" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="147.32" x2="228.6" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="134.62" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
-<junction x="187.96" y="147.32"/>
+<wire x1="228.6" y1="147.32" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="134.62" x2="180.34" y2="147.32" width="0.1524" layer="91"/>
+<junction x="180.34" y="147.32"/>
+<pinref part="J8" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="134.62" x2="228.6" y2="147.32" width="0.1524" layer="91"/>
+<junction x="228.6" y="147.32"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -21199,8 +21209,8 @@ If jack is present, they float.</text>
 <segment>
 <pinref part="J6" gate="G$1" pin="EARTH-NORM"/>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="231.14" y1="139.7" x2="203.2" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="139.7" x2="203.2" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="139.7" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="139.7" x2="200.66" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
