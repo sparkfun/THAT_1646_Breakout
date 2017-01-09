@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -31,8 +31,8 @@
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -52,13 +52,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -184,18 +184,18 @@ accomodate TRS jack</text>
 <text x="2.286" y="8.89" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center-right">V-</text>
 <text x="2.286" y="6.35" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center-right">GND</text>
 <text x="27.94" y="1.27" size="1.27" layer="22" font="vector" ratio="15" rot="MR180" align="center-right">TN</text>
-<text x="34.29" y="1.27" size="1.27" layer="22" font="vector" ratio="15" rot="MR180" align="center-right">RN</text>
+<text x="35.56" y="1.27" size="1.27" layer="22" font="vector" ratio="15" rot="MR180" align="center-right">RN</text>
 <text x="43.18" y="1.27" size="1.27" layer="22" font="vector" ratio="15" rot="MR180" align="center-right">SN</text>
 <text x="27.94" y="19.05" size="1.27" layer="22" font="vector" ratio="15" rot="MR180" align="center-right">T</text>
-<text x="34.29" y="19.05" size="1.27" layer="22" font="vector" ratio="15" rot="MR180" align="center-right">R</text>
+<text x="35.56" y="19.05" size="1.27" layer="22" font="vector" ratio="15" rot="MR180" align="center-right">R</text>
 <text x="43.18" y="19.05" size="1.27" layer="22" font="vector" ratio="15" rot="MR180" align="center-right">S</text>
 <text x="0.635" y="16.764" size="1.27" layer="21" font="vector" ratio="15">THAT 1646 
 Breakout</text>
 <text x="28.194" y="19.05" size="1.27" layer="21" font="vector" ratio="15" align="center-right">T</text>
-<text x="34.544" y="19.05" size="1.27" layer="21" font="vector" ratio="15" align="center-right">R</text>
+<text x="35.814" y="19.05" size="1.27" layer="21" font="vector" ratio="15" align="center-right">R</text>
 <text x="43.434" y="19.05" size="1.27" layer="21" font="vector" ratio="15" align="center-right">S</text>
 <text x="43.18" y="1.27" size="1.27" layer="21" font="vector" ratio="15" align="center-right">SN</text>
-<text x="34.544" y="1.27" size="1.27" layer="21" font="vector" ratio="15" align="center-right">RN</text>
+<text x="35.814" y="1.27" size="1.27" layer="21" font="vector" ratio="15" align="center-right">RN</text>
 <text x="27.94" y="1.27" size="1.27" layer="21" font="vector" ratio="15" align="center-right">TN</text>
 </plain>
 <libraries>
@@ -1788,7 +1788,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="4.064" y="16.764" rot="MR0"/>
 <element name="J2" library="SparkFun-Connectors" package="1X01_NO_SILK" value="SN" x="44.45" y="1.27"/>
 <element name="J4" library="SparkFun-Connectors" package="1X01_NO_SILK" value="TN" x="29.21" y="1.27"/>
-<element name="J5" library="SparkFun-Connectors" package="1X01_NO_SILK" value="RN" x="35.56" y="1.27"/>
+<element name="J5" library="SparkFun-Connectors" package="1X01_NO_SILK" value="RN" x="36.83" y="1.27"/>
 <element name="LOGO4" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.2" value="SFE_LOGO_FLAME.2_INCH" x="34.798" y="8.636" rot="MR90"/>
 <element name="FD1" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="1.016" y="17.526" rot="MR0"/>
 <element name="FD2" library="SparkFun-Aesthetics" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="42.672" y="0.762" rot="MR0"/>
@@ -1805,7 +1805,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="PROD_ID" value="CAP-13474" x="14.986" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="J7" library="SparkFun-Connectors" package="1X01_NO_SILK" value="T" x="29.21" y="19.05"/>
-<element name="J8" library="SparkFun-Connectors" package="1X01_NO_SILK" value="R" x="35.56" y="19.05"/>
+<element name="J8" library="SparkFun-Connectors" package="1X01_NO_SILK" value="R" x="36.83" y="19.05"/>
 </elements>
 <signals>
 <signal name="VNEG">
@@ -1925,11 +1925,11 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <via x="22.606" y="10.414" extent="1-16" drill="0.508"/>
 <via x="26.162" y="14.986" extent="1-16" drill="0.508"/>
 <via x="25.654" y="4.826" extent="1-16" drill="0.508"/>
-<via x="37.592" y="1.016" extent="1-16" drill="0.508"/>
+<via x="38.862" y="1.016" extent="1-16" drill="0.508"/>
 <via x="32.004" y="15.748" extent="1-16" drill="0.508"/>
 <via x="30.988" y="19.304" extent="1-16" drill="0.508"/>
-<via x="32.512" y="19.304" extent="1-16" drill="0.508"/>
-<via x="37.338" y="19.304" extent="1-16" drill="0.508"/>
+<via x="33.782" y="19.304" extent="1-16" drill="0.508"/>
+<via x="38.608" y="19.304" extent="1-16" drill="0.508"/>
 <via x="24.384" y="1.016" extent="1-16" drill="0.508"/>
 <via x="41.402" y="10.16" extent="1-16" drill="0.508"/>
 </signal>
@@ -1959,8 +1959,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="33.534" y1="17.526" x2="26.162" y2="17.526" width="0.254" layer="1"/>
 <wire x1="26.162" y1="17.526" x2="24.804" y2="16.168" width="0.254" layer="1"/>
 <wire x1="35.22" y1="15.84" x2="35.22" y2="17.44" width="0.254" layer="16"/>
-<wire x1="35.22" y1="17.44" x2="35.56" y2="17.78" width="0.254" layer="16"/>
-<wire x1="35.56" y1="17.78" x2="35.56" y2="19.05" width="0.254" layer="16"/>
+<wire x1="35.22" y1="17.44" x2="36.83" y2="19.05" width="0.254" layer="16"/>
 <wire x1="33.534" y1="17.526" x2="35.22" y2="15.84" width="0.254" layer="1"/>
 </signal>
 <signal name="N$10">
@@ -2021,8 +2020,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="J6" pad="RING-NORM"/>
 <contactref element="J5" pad="1"/>
 <wire x1="35.22" y1="4.54" x2="35.22" y2="2.88" width="0.254" layer="16"/>
-<wire x1="35.22" y1="2.88" x2="35.56" y2="2.54" width="0.254" layer="16"/>
-<wire x1="35.56" y1="2.54" x2="35.56" y2="1.27" width="0.254" layer="16"/>
+<wire x1="35.22" y1="2.88" x2="36.83" y2="1.27" width="0.254" layer="16"/>
 </signal>
 <signal name="N$2">
 <contactref element="J6" pad="TIP-NORM"/>
