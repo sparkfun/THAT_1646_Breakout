@@ -49,6 +49,12 @@ local.properties
 # PDT-specific
 .buildpath
 
+#############
+## LTSpice
+#############
+
+*.log
+*.raw
 
 #############
 ## Eagle
