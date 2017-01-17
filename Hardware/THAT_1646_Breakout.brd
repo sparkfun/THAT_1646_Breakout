@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,8 +23,8 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -46,19 +46,19 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -1349,9 +1349,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>&lt;b&gt;Small Outline Package&lt;/b&gt; Fits JEDEC packages (narrow SOIC-8)</description>
 <circle x="-2.7813" y="-1.5748" radius="0.1436" width="0.2032" layer="21"/>
 <wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
-<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
+<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.2032" layer="21"/>
 <wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
+<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.2032" layer="21"/>
 <rectangle x1="-2.0828" y1="-2.8702" x2="-1.7272" y2="-1.8542" layer="51"/>
 <rectangle x1="-0.8128" y1="-2.8702" x2="-0.4572" y2="-1.8542" layer="51"/>
 <rectangle x1="0.4572" y1="-2.8702" x2="0.8128" y2="-1.8542" layer="51"/>
@@ -1378,16 +1378,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="3.25" y1="-1.55" x2="1.55" y2="-3.25" width="0.1016" layer="51"/>
 <wire x1="1.55" y1="-3.25" x2="-3.25" y2="-3.25" width="0.1016" layer="51"/>
 <wire x1="-3.25" y1="-3.25" x2="-3.25" y2="3.25" width="0.1016" layer="51"/>
-<wire x1="-3.25" y1="0.95" x2="-3.25" y2="3.25" width="0.1016" layer="21"/>
-<wire x1="-3.25" y1="3.25" x2="1.55" y2="3.25" width="0.1016" layer="21"/>
-<wire x1="1.55" y1="3.25" x2="3.25" y2="1.55" width="0.1016" layer="21"/>
-<wire x1="3.25" y1="1.55" x2="3.25" y2="0.95" width="0.1016" layer="21"/>
-<wire x1="3.25" y1="-0.95" x2="3.25" y2="-1.55" width="0.1016" layer="21"/>
-<wire x1="3.25" y1="-1.55" x2="1.55" y2="-3.25" width="0.1016" layer="21"/>
-<wire x1="1.55" y1="-3.25" x2="-3.25" y2="-3.25" width="0.1016" layer="21"/>
-<wire x1="-3.25" y1="-3.25" x2="-3.25" y2="-0.95" width="0.1016" layer="21"/>
-<wire x1="2.95" y1="0.95" x2="-2.95" y2="0.95" width="0.1016" layer="21" curve="144.299363"/>
-<wire x1="-2.95" y1="-0.95" x2="2.95" y2="-0.95" width="0.1016" layer="21" curve="144.299363"/>
+<wire x1="-3.25" y1="0.95" x2="-3.25" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="3.25" x2="1.55" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="1.55" y1="3.25" x2="3.25" y2="1.55" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="1.55" x2="3.25" y2="0.95" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="-0.95" x2="3.25" y2="-1.55" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="-1.55" x2="1.55" y2="-3.25" width="0.2032" layer="21"/>
+<wire x1="1.55" y1="-3.25" x2="-3.25" y2="-3.25" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="-3.25" x2="-3.25" y2="-0.95" width="0.2032" layer="21"/>
+<wire x1="2.95" y1="0.95" x2="-2.95" y2="0.95" width="0.2032" layer="21" curve="144.299363"/>
+<wire x1="-2.95" y1="-0.95" x2="2.95" y2="-0.95" width="0.2032" layer="21" curve="144.299363"/>
 <wire x1="-2.1" y1="2.25" x2="-2.1" y2="-2.2" width="0.1016" layer="51"/>
 <circle x="0" y="0" radius="3.1" width="0.1016" layer="51"/>
 <smd name="+" x="2.4" y="0" dx="3" dy="1.4" layer="1"/>
@@ -1418,22 +1418,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="AUDIO-JACK-.25-INCH-HORIZ-PTH">
-<pad name="RING-NORM" x="10.5" y="4.35" drill="1.6"/>
-<pad name="SLEEVE" x="4.2" y="-6.95" drill="1.6"/>
-<pad name="SLEEVE-NORM" x="4.2" y="4.35" drill="1.6"/>
-<pad name="RING" x="10.5" y="-6.95" drill="1.6"/>
-<pad name="TIP-NORM" x="16.8" y="4.35" drill="1.6"/>
-<pad name="TIP" x="16.8" y="-6.95" drill="1.6"/>
+<package name="AUDIO_JACK_0.25&quot;_TRS_PTH_RA">
+<description>&lt;h3&gt;Right Angle -1/4" Stereo Jack&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 6&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”http://cdn.sparkfun.com/datasheets/Components/General/JP-611%20DD.jpg”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;AUDIO_JACK_TRS_0.25"_PTH_RA&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="0" y1="6.23" x2="0" y2="-8.77" width="0.127" layer="21"/>
-<wire x1="0" y1="-8.77" x2="21" y2="-8.77" width="0.127" layer="21"/>
-<wire x1="21" y1="-8.77" x2="21" y2="-3.97" width="0.127" layer="21"/>
-<wire x1="21" y1="-3.97" x2="21" y2="4.03" width="0.127" layer="21"/>
-<wire x1="21" y1="4.03" x2="21" y2="6.23" width="0.127" layer="21"/>
-<wire x1="21" y1="6.23" x2="0" y2="6.23" width="0.127" layer="21"/>
-<wire x1="0.73" y1="0.03" x2="24" y2="0.03" width="0.127" layer="21"/>
-<wire x1="24" y1="0.03" x2="24" y2="3.03" width="0.127" layer="21"/>
-<wire x1="24" y1="0.03" x2="24" y2="-2.97" width="0.127" layer="21"/>
+<wire x1="0" y1="-8.77" x2="21" y2="-8.77" width="0.2032" layer="21"/>
+<wire x1="21" y1="-8.77" x2="21" y2="-3.97" width="0.2032" layer="21"/>
+<wire x1="21" y1="-3.97" x2="21" y2="4.03" width="0.2032" layer="21"/>
+<wire x1="21" y1="4.03" x2="21" y2="6.23" width="0.2032" layer="21"/>
+<wire x1="21" y1="6.23" x2="0" y2="6.23" width="0.2032" layer="21"/>
+<wire x1="0.095" y1="0.03" x2="24" y2="0.03" width="0.2032" layer="21"/>
+<wire x1="24" y1="0.03" x2="24" y2="3.03" width="0.2032" layer="21"/>
+<wire x1="24" y1="0.03" x2="24" y2="-2.97" width="0.2032" layer="21"/>
 <wire x1="-9" y1="5.53" x2="0" y2="5.53" width="0.127" layer="51"/>
 <wire x1="0" y1="5.53" x2="0" y2="-5.47" width="0.127" layer="51"/>
 <wire x1="0" y1="-5.47" x2="-9" y2="-5.47" width="0.127" layer="51"/>
@@ -1446,17 +1448,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-4" y1="4.53" x2="-3" y2="-4.47" width="0.127" layer="51"/>
 <wire x1="-3" y1="4.53" x2="-2" y2="-4.47" width="0.127" layer="51"/>
 <wire x1="-2" y1="4.53" x2="-1" y2="-4.47" width="0.127" layer="51"/>
-<wire x1="24" y1="3.03" x2="21" y2="4.03" width="0.127" layer="21"/>
-<wire x1="24" y1="-2.97" x2="21" y2="-3.97" width="0.127" layer="21"/>
+<wire x1="24" y1="3.03" x2="21" y2="4.03" width="0.2032" layer="21"/>
+<wire x1="24" y1="-2.97" x2="21" y2="-3.97" width="0.2032" layer="21"/>
 <wire x1="-9" y1="0.03" x2="-8.1" y2="0.03" width="0.127" layer="51"/>
-<text x="2.54" y="0" size="1.778" layer="25" font="vector">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="27" font="vector">&gt;VALUE</text>
-<hole x="7.4" y="4" drill="2.2"/>
-<hole x="7.4" y="-6.6" drill="2.2"/>
 <wire x1="-6" y1="8.75" x2="0" y2="8.75" width="0.127" layer="51"/>
 <wire x1="-6" y1="-8.75" x2="0" y2="-8.75" width="0.127" layer="51"/>
 <wire x1="-6" y1="8.75" x2="-6" y2="-8.75" width="0.127" layer="51"/>
 <wire x1="0" y1="8.75" x2="0" y2="-8.75" width="0.127" layer="51"/>
+<pad name="RING" x="10.5" y="-6.95" drill="1.6"/>
+<pad name="RING-NORM" x="10.5" y="4.35" drill="1.6"/>
+<pad name="SLEEVE" x="4.2" y="-6.95" drill="1.6"/>
+<pad name="SLEEVE-NORM" x="4.2" y="4.35" drill="1.6"/>
+<pad name="TIP" x="16.8" y="-6.95" drill="1.6"/>
+<pad name="TIP-NORM" x="16.8" y="4.35" drill="1.6"/>
+<hole x="7.4" y="4" drill="2.2"/>
+<hole x="7.4" y="-6.6" drill="2.2"/>
+<text x="7.62" y="-1.778" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="7.62" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="1X04_NO_SILK_ALL_ROUND">
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
@@ -1740,7 +1748,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="IC1" library="that-ics" package="SO08" value="THAT1646" x="8.89" y="10.16" rot="R180">
 <attribute name="PROD_ID" value="IC-13473" x="8.89" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J6" library="SparkFun-Connectors" package="AUDIO-JACK-.25-INCH-HORIZ-PTH" value="OUTPUT" x="45.72" y="8.89" rot="R180">
+<element name="J6" library="SparkFun-Connectors" package="AUDIO_JACK_0.25&quot;_TRS_PTH_RA" value="OUTPUT" x="45.72" y="8.89" rot="R180">
 <attribute name="PROD_ID" value="CONN-12339" x="45.72" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SF_ID" value="COM-11144" x="45.72" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -1922,7 +1930,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <via x="33.782" y="19.304" extent="1-16" drill="0.508"/>
 <via x="38.608" y="19.304" extent="1-16" drill="0.508"/>
 <via x="24.384" y="1.016" extent="1-16" drill="0.508"/>
-<via x="43.942" y="13.97" extent="1-16" drill="0.508"/>
+<via x="43.434" y="14.351" extent="1-16" drill="0.508"/>
 <contactref element="J9" pad="1"/>
 <contactref element="J3" pad="1"/>
 </signal>
