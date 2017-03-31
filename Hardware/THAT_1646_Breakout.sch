@@ -20299,7 +20299,7 @@ output connector (J4).  In that case, leave JP1 intact.
 
 If installing in a metal enclosure, the enclosure should be tied to earth, 
 and the shield should be tied to the enclosure as directly as possible.  
-In this case, cut JP1, and run a heavy wire from J3 to the chassis.
+In this case, cut JP1, and run a heavy wire from J9 to the chassis.
 
 This avoids the common "pin 1 problem," 
 http://www.rane.com/note151.html
